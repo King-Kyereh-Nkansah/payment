@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <!-- font awesome cnd link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/56eafbf21d.js" crossorigin="anonymous"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <!-- header section starts here -->
+    <header class="header" id="header">
+    </i><a href="#" class="logo" id="logo"></i>GOMOTO</a>
+
+    <nav class="nav-bar">
+        <ul>
+        <li><a href="index.html" class="main">Home</a><i class="fa-solid fa-house-user"></i>
+        <div class="sub-menu1">
+            <ul>
+                <li><a href="index.html">Food Delivery</a></li>
+                <li><a href="#">Water Delivery</a></li>
+                <li><a href="#">Pizza Time</a></li>
+                <li><a href="#">Medical Supplies</a></li>
+            </ul>
+        </div>
+        </li>
+        <li><a href="about">About us</a><i class="fa-solid fa-eject"></i>
+            <div class="sub-menu1">
+                <ul>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li class="hover-me"><a href="gallery">Gallery</a>
+                        <div class="sub-menu2">
+                            <ul>
+                                <li><a href="2columns.html">Gallery <br> 2-columns</a></li>
+                                <li><a href="3columns.html">Gallery <br> 3-columns</a></li>
+                                <li><a href="4columns.html">Gallery <br> 4-columns</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">404 Page</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Catalog</a><i class="fa-solid fa-chart-tree-map"></i>
+            <div class="sub-menu1">
+                <ul>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Checkout</a></li>
+                    <li><a href="#">My  account</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Blog</a><i class="fa-solid fa-blog"></i>
+            <div class="sub-menu1">
+                <ul>
+                    <li><a href="food-delivery">Blog with <br> Sidebar</a></li>
+                    <li><a href="water-delivery">Blog without <br> Sidebar</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="contacts.html">Contacts</a><i class="fa-solid fa-id-badge"></i></li>
+        </ul>
+    </nav>
+
+    <div class="icons">
+        <div class="fa-solid fa-phone"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here .......">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+</header>
+    <!-- header section ends here -->
+    <!-- payment section starts here -->
+    <section class="payment">
+    <div class="container">
+        <h6>Checkout</h6>
+        <span>x</span>
+        <h1>Payment Method</h1>
+        <form action="">
+            <label for="country">Country
+                <select name="country" id="country">
+                    <option value="Ghana">Ghana</option>
+                    <option value="Germany">Germany</option>
+                    <option value="England">England</option>
+                </select>
+            </label>
+            <label for="card_number">Card Number
+                <input type="text" name="card_number" id="card_number" maxlength="20" onkeypress="cardspace()"/>
+            </label>
+            <div class="float">
+                <label for="validtill">Valid till
+                    <input type="text" name="validtill" id="validtill" maxlength="7"onkeypress="addSlashes()"/>
+                </label>
+                <label for="cvv">CVV 
+                    <input type="text" name="cvv" id="cvv" maxlength="3"/>
+                </label>
+            </div>
+            <div class="img">
+            <img src="visa.png" alt="">
+            </div>
+                <label for="checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox"/>
+                    <p>Payment Address is the same as the Delivery Address</p>
+                </label>
+                <div class="momo">
+                <p>Pay via... <input type="text" placeholder="+233 ** *** ****"></p> 
+                <marquee behavior="" direction=""><img src="download.jfif" alt=""> </marquee>
+                </div>
+                <button>Pay Gh&#8373;50.00</button>
+            
+        </form>
+    </div>
+    </section>
+    <!-- payment section ends here -->
+    <script src="payment.js"></script>
+</body>
+</html>
